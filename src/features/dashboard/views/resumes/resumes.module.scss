@@ -1,0 +1,130 @@
+@use '@/styles/base/utils' as *;
+
+.DashboardResumes {
+  
+  max-width: auto;
+}
+
+.ActionCard {
+	display: flex;
+	gap: 4px;
+	flex-direction: column;
+	padding: 24px;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 31%;
+	background: #ffffff;
+	border: 1px solid #e7e9eb;
+	border-radius: 12px;
+
+	@include media('md', 'max') {
+		max-width: 100%;
+	}
+
+	.ActionCardIcon {
+		margin-bottom: 12px;
+		background: #f9fafa;
+		border: 1px solid #f3f4f4;
+		border-radius: 4px;
+		padding: 8px;
+
+		svg {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+
+.AddResume {
+  width: 100%;
+	max-width: 22%;
+	background: #EBF5FF;
+	overflow: hidden;
+	border-radius: 8px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	min-height: 450px;
+	border: 1px solid #e7e9eb;
+  cursor: pointer;
+}
+
+.PastResume {
+	width: 100%;
+	max-width: 22%;
+	background: #ffffff;
+	overflow: hidden;
+	border-radius: 8px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: 450px;
+	border: 1px solid #e7e9eb;
+
+	.PastResumeInfo {
+		padding: 18px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		border-top: 1px solid #e7e9eb;
+	}
+}
+
+.Section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 72px;
+
+	&:last-child {
+		margin-bottom: 72px;
+	}
+}
+
+.DashboardResumesSearch {
+  padding: 0 16px;
+  width: 372px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  @include media('lg', 'max') {
+    display: none;
+  }
+
+  input {
+    font-size: var(--font-accent);
+    padding: 12px 4px;
+    height: auto;
+
+    &::-webkit-input-placeholder {
+      color: var(--text-gray-light);
+    }
+
+    &::-moz-placeholder {
+      color: var(--text-gray-light);
+    }
+
+    &:-ms-input-placeholder {
+      color: var(--text-gray-light);
+    }
+
+    &::-ms-input-placeholder {
+      color: var(--text-gray-light);
+    }
+
+    &::placeholder {
+      color: var(--text-gray-light);
+    }
+  }
+
+}
+
+.DashboardWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

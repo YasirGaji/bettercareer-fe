@@ -100,6 +100,7 @@ export const DashboardHeader = ({ bare }: { bare?: boolean }) => {
 							</Flex>
 						)}
 					</Flex>
+
 					<Flex
 						className={styles.DashboardHeaderRight}
 						alignItems="center"
